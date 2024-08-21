@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* border: 1px solid red; */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  margin: 50px;
+  /* align-items: center; */
+}
+.message {
+  color: white;
+  background-color: rgb(188, 57, 57);
+  padding: 10px;
+  font-weight: bold;
+  visibility: hidden;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.search-wrap {
+  display: flex;
+  gap: 5px;
+  /* justify-content: space-between;
+  align-items: center; */
+}
+#search {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  visibility: hidden;
+}
+
+.search {
+  padding: 3px;
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.search:hover {
+  scale: 1.05;
+}
+
+.tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.task-input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 50vh;
+  overflow: auto;
+}
+section ul::-webkit-scrollbar {
+  /* border: 1px solid red; */
+  width: 7px;
+  padding: 5px 0px;
+}
+section ul::-webkit-scrollbar-thumb {
+  background-color: rgba(179, 164, 164, 0.345);
+  border-radius: 10px;
+}
+.listItem {
+  border: 1px solid gray;
+  padding: 3px;
+  margin: 1px;
+  border-radius: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clear-button {
+  visibility: hidden;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(230, 15, 15);
+}
+.add-btn {
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(85, 68, 68);
+}
+/* .clearItem {
+  border: 1px solid black;
+  padding: 3px;
+} */
